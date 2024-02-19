@@ -1,4 +1,4 @@
-// Example data validation utility using Joi
+
 const Joi = require('joi');
 
 function validateData(data, schema) {
