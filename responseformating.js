@@ -1,4 +1,3 @@
-// Example response formatting utility
 function formatResponse(data, message = 'Success') {
     return { success: true, message, data };
 }
