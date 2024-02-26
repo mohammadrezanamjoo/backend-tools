@@ -1,4 +1,3 @@
-// Example query builder helper using Sequelize (SQL-based databases)
 const { Op } = require('sequelize');
 const { User } = require('../models');
 
