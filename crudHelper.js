@@ -1,4 +1,4 @@
-// Example CRUD operations helper using MongoDB and Mongoose
+
 const mongoose = require('mongoose');
 
 // Define a mongoose schema and model
