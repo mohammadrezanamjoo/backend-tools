@@ -4,4 +4,4 @@ function asyncErrorHandler(fn) {
     };
 }
 
-module.exports = { asyncErrorHandler };
+module.exports =  { asyncErrorHandler };
