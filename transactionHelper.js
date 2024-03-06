@@ -13,7 +13,6 @@ async function transferFunds(senderId, receiverId, amount) {
             where: { id: receiverId },
             transaction
         });
-        // Commit the transaction
         await transaction.commit();
         return true;
     } catch (error) {
