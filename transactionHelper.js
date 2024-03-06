@@ -1,4 +1,4 @@
-// Example transaction helper using Sequelize (SQL-based databases)
+
 const { sequelize } = require('../models');
 
 async function transferFunds(senderId, receiverId, amount) {
