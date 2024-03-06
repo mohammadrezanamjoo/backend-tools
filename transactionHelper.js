@@ -16,7 +16,6 @@ async function transferFunds(senderId, receiverId, amount) {
         await transaction.commit();
         return true;
     } catch (error) {
-        // Rollback the transaction in case of error
         await transaction.rollback();
         throw error;
     }
