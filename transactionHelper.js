@@ -4,7 +4,7 @@ const { sequelize } = require('../models');
 async function transferFunds(senderId, receiverId, amount) {
     const transaction = await sequelize.transaction();
     try {
-        // Deduct amount from sender's account
+
         await Account.update({ balance: sequelize.literal(`balance - ${amount}`) }, {
             where: { id: senderId },
             transaction
