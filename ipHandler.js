@@ -7,7 +7,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// Define your routes and other middleware here
 
 // Start the server
 const port = 3000;
