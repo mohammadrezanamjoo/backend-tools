@@ -11,7 +11,7 @@ const proxy = httpProxy.createProxyServer({});
 
 const app = express();
 
-// Define a route to handle incoming requests and forward them to the servers
+// Define a route to handle incoming requests and forward them to the server
 app.all('/*', (req, res) => {
     // Choose a server randomly
     const selectedServer = servers[Math.floor(Math.random() * servers.length)];
