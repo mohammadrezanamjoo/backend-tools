@@ -13,7 +13,6 @@ const app = express();
 
 
 app.all('/*', (req, res) => {
-    // Choose a server randomly
     const selectedServer = servers[Math.floor(Math.random() * servers.length)];
 
     // Proxy the request to the selected server
