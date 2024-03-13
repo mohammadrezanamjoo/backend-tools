@@ -1,7 +1,6 @@
 const express = require('express');
 const httpProxy = require('http-proxy');
 
-// List of servers to balance between
 const servers = [
     { host: 'localhost', port: 3001 },
     { host: 'localhost', port: 3002 },
