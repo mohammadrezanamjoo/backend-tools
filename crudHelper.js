@@ -15,7 +15,7 @@ async function createUser(data) {
 }
 
 async function getUserById(id) {
-    return await User.findById(id);
+    return await User.findById (id);
 }
 
 async function updateUser(id, data) {
