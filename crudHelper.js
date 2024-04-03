@@ -23,7 +23,7 @@ async function updateUser(id, data) {
 }
 
 async function deleteUser(id) {
-    return await User.findByIdAndDelete(id);
+    return await User.findByIdAndDelete (id);
 }
 
 module.exports = { createUser, getUserById, updateUser, deleteUser };
