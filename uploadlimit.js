@@ -25,7 +25,6 @@ const uploadLimit = (req, res, next) => {
 
 // POST endpoint for file upload
 app.post('/upload', uploadLimit, (req, res) => {
-  // If the request reaches here, it means the file upload was successful
   res.status(200).json({ message: 'File uploaded successfully' });
 });
 
