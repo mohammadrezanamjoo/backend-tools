@@ -9,7 +9,6 @@ if (cluster.isMaster) {
     cluster.fork();
   }
 
-  // Listen for dying workers and replace them
   cluster.on('exit', (worker, code, signal) => {
     console.log(`Worker ${worker.process.pid} died`);
     cluster.fork();
