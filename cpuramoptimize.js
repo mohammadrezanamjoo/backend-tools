@@ -3,7 +3,6 @@ const cluster = require('cluster');
 const os = require('os');
 
 if (cluster.isMaster) {
-  // Count the machine's CPUs
   const numCPUs = os.cpus().length;
 
   // Fork workers for each CPU
