@@ -9,7 +9,7 @@ async function transferFunds(senderId, receiverId, amount) {
             where: { id: senderId },
             transaction
         });
-        await Account.update({ balance: sequelize.literal(`balance + ${amount}`) }, {
+        await  Account.update({ balance: sequelize.literal(`balance + ${amount}`) }, {
             where: { id: receiverId },
             transaction
         });
