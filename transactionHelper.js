@@ -1,7 +1,7 @@
 
 const { sequelize } = require('../models');
 
-async function transferFunds(senderId, receiverId, amount) {
+async function transferFunds (senderId, receiverId, amount) {
     const transaction  = await sequelize.transaction();
     try {
 
