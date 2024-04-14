@@ -1,5 +1,5 @@
 
-const Joi = require('joi');
+const Joi = require ('joi');
 
 function validateData(data, schema) {
     const { error, value } = schema.validate(data);
