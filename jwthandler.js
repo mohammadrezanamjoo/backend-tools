@@ -27,7 +27,6 @@ const verifyToken = (req, res, next) => {
 };
 
 app.get('/protected', verifyToken, (req, res) => {
-  // Access the decoded token
   console.log('Decoded token:', req.user);
   res.json({ message: 'Protected route accessed' });
 });
