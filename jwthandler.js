@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 
-// Define your secret key
 const secretKey = 'yourSecretKey'; // Replace with your actual secret key
 
 // Middleware to verify JWT token
