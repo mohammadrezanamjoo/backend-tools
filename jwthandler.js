@@ -5,7 +5,6 @@ const app = express();
 
 const secretKey = 'yourSecretKey'; // Replace with your actual secret key
 
-// Middleware to verify JWT token
 const verifyToken = (req, res, next) => {
   // Get the token from the request header
   const token = req.headers['authorization'];
