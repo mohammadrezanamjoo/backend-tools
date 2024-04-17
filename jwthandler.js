@@ -26,7 +26,6 @@ const verifyToken = (req, res, next) => {
   }
 };
 
-// Example protected route
 app.get('/protected', verifyToken, (req, res) => {
   // Access the decoded token
   console.log('Decoded token:', req.user);
