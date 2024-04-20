@@ -3,7 +3,7 @@ const app = express();
 
 
 app.use((req, res, next) => {
-    console.log(`Incoming request from IP: ${req.ip}`);
+    console.log(`Incoming request from IP : ${req.ip}`);
     next();
 });
 
