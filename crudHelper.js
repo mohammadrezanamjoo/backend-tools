@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema( {
     age: Number
 });
 
-const User = mongoose.model ('User', UserSchema);
+const User = mongoose.model ('User' , UserSchema);
 
 async function createUser(data) {
     return await User.create(data) ;
