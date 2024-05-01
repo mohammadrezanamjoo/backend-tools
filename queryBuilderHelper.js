@@ -12,4 +12,4 @@ async function getUsersByAgeRange(minAge, maxAge) {
     });
 }
 
-module.exports = { getUsersByAgeRange };
+module.exports =  { getUsersByAgeRange };
