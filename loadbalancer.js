@@ -14,7 +14,7 @@ const app = express();
 app.all('/*', (req, res) => {
     const selectedServer = servers[Math.floor(Math.random() * servers.length)];
 
-    // Proxy the request to the selected server
+    // Proxy the request to the selected 
     proxy.web(req, res, {
         target: {
             host: selectedServer.host,
