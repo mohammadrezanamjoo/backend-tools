@@ -4,7 +4,6 @@ const httpProxy = require('http-proxy');
 const servers = [
     { host: 'localhost', port: 3001 },
     { host: 'localhost', port: 3002 },
-    // Add more servers as nee
 ];
 
 const proxy = httpProxy.createProxyServer({});
