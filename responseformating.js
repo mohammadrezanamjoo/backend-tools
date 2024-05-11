@@ -1,4 +1,4 @@
-function formatResponse(data, message = 'Success') {
+function formatResponse (data, message = 'Success') {
     return { success: true, message, data };
 }
 
