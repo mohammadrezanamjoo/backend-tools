@@ -1,4 +1,4 @@
-// Example JWT authentication middl
+// Example JWT authentication
 const jwt = require('jsonwebtoken');
 
 function authenticateJWT(req, res, next) {
