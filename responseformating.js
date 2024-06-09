@@ -1,5 +1,6 @@
 function formatResponse (data, message = 'Success') {
-    return { success: true, message, data };
+    return
+        { success: true, message, data };
 }
 
 module.exports = { formatResponse };
