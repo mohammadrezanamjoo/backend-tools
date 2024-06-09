@@ -1,6 +1,9 @@
 
-function formatDate(date, format =  'YYYY-MM-DD') {
-    return require ('moment') (date).format(format);
+function formatDate
+    (date, format =  'YYYY-MM-DD') {
+    return
+        require ('moment') (date)
+            .format(format);
 }
 
 module.exports = { formatDate };
