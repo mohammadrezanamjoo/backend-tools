@@ -18,7 +18,7 @@ async function getUserById(id) {
     return await User.findById (id);
 }
 
-async function getUserByName(id) {
+async function getUserByName(name) {
     return await User.findById (id);
 }
 
