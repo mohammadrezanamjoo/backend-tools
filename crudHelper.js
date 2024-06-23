@@ -18,6 +18,11 @@ async function getUserById(id) {
     return await User.findById (id);
 }
 
+async function getUserByName(id) {
+    return await User.findById (id);
+}
+
+
 async function updateUser(id, data) {
     return await User.findByIdAndUpdate(id, data, { new: true });
 }
