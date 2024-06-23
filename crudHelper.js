@@ -19,7 +19,7 @@ async function getUserById(id) {
 }
 
 async function getUserByName(name) {
-    return await User.findById (id);
+    return await User.findById (name);
 }
 
 
