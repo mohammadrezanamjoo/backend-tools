@@ -17,7 +17,7 @@ if (cluster.isMaster) {
   // Worker code
   const server = http.createServer((req, res) => {
     // Simulate CPU intensive task
-    // This could be replaced with your actual application logic
+    // This could be replaced with your actual application
     let result = 0;
     for (let i = 0; i < 1000000; i++) {
       result += Math.sqrt(i);
