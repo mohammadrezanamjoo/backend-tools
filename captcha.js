@@ -10,6 +10,7 @@ app.get('/captcha', (req, res) => {
   res.type('svg');
   
   res.status(200).send(captcha.data);
+  
 });
 
 app.listen(port, () => {
