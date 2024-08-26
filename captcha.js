@@ -8,6 +8,7 @@ app.get('/captcha', (req, res) => {
   
   const captcha = svgCaptcha.create();
   res.type('svg');
+  
   res.status(200).send(captcha.data);
 });
 
