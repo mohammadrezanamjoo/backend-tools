@@ -9,6 +9,7 @@ function validateData (data, schema) {
         
         throw new  Error(`Validation error:  ${error.details.map(detail =>  detail.message).join(', ')}`);
     }
+    
     return value;
 }
 
