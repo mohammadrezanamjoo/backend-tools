@@ -11,6 +11,7 @@ const UserSchema = new mongoose.Schema( {
 const User = mongoose.model ('User' , UserSchema);
 
 async function createUser(data) {
+    
     return await User.create(data) ;
 }
 
