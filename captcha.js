@@ -8,7 +8,7 @@ const port = 3000;
 
 app.get('/captcha', (req, res) => {
   
-  const captcha = svgCaptcha.create();
+  const captcha = svgCaptcha.create(); 
   
   res.type('svg');
   
